@@ -571,6 +571,7 @@ table {
 .agenda-content__items {
     margin-top: 35px;
     margin-left: 60px;
+    width: 530px;
     height: 450px;
 }
 
