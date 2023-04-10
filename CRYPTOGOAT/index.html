@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CRYPTOGOAT</title>
+</head>
+
+<body>
+    <div id="dot"></div>
+
+    <nav class="nav">
+        <div class="container">
+            <img src="./images/logo.svg" alt="logo" class="nav-logo">
+            <ul class="mav-menu">
+                <li class="nav-menu__item">
+                    <a href="#home" class="nav-menu__link">Home</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#aboutUs" class="nav-menu__link">About Us</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#speakers" class="nav-menu__link">Speakers</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#sponsors" class="nav-menu__link">Sponsors</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a href="#agenda" class="nav-menu__link">Agenda</a>
+                </li>
+            </ul>
+            <button class="nav-btn" id="joinBtn">join the event</button>
+        </div>
+    </nav>
+    <div id="join" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-content__join">
+                <h3 class="modal-content__title">
+                    join
+                </h3>
+                <form class="modal-content__form">
+                    <input type="email" class="modal-content__input" placeholder="Indicate your E-mail">
+                    <button class="modal-content__btn">join the event</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="getTicket" class="modal">
+        <div class="modal-content">
+            <span class="closse">&times;</span>
+            <div class="modal-content__join">
+                <h3 class="modal-content__title">
+                    join
+                </h3>
+                <form class="modal-content__form">
+                    <input type="email" class="modal-content__input" placeholder="Indicate your E-mail">
+                    <button class="modal-content__btn">get tickets</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="header" id="home">
+        <div class="header-content">
+            <p class="header-content__date">
+                June 1, 2023 at 6:30 pm.<br>
+                Dubai / ATLANTIS / THE PALM
+            </p>
+            <h1 class="header-content__location">
+                dubai
+            </h1>
+            <h2 class="header-content__title">
+                blockchain <br> Conference
+            </h2>
+            <div class="header-content__buttons">
+                <button class="header-content__join" id="joinBtnSecond">
+                    join the event
+                </button>
+                <button class="header-content__buy" id="getBtn">
+                    get tickets
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about" id="aboutUs">
+            <div class="container--about">
+                <div class="about-content">
+                    <div class="about-content__info">
+                        <h3 class="title">
+                            about us
+                        </h3>
+                        <p class="about-content__text">
+                            CryptoGOAT is the blockchain conference network bringing together the key players of
+                            crypto industry and experts to redefine the future of finance.
+                        <p class="about-content__text">
+                            The edition of the CryptoGOAT will take place during on June 1, 2023 in Dubai, with the
+                            world’s top crypto companies and blockchain entrepreneurs. Today, UAE, specifically
+                            Dubai is gearing up to become a global crypto hub.
+                        </p>
+                        <p class="about-content__text">
+                            Thus, CryptoGOAT will be the gathering in the region on behalf of the world of
+                            blockchain and cryptocurrency, with a wide range of topics focused on the financial
+                            technologies of the future, extensive networking opportunities and participation from
+                            more than 40 countries.
+                        </p>
+                        </p>
+                    </div>
+                    <div class="about-content__ticket">
+                        <img src="./images/ticket.png" alt="images" class="about-content__img">
+                        <div class="about-content__filling">
+                            <h4 class="about-content__name">
+                                crypton <br> ticket
+                            </h4>
+                            <div class="about-content__time">
+                                <h5 class="about-content__caption">
+                                    when
+                                </h5>
+                                <p class="about-content__par">
+                                    June 1, 2023 at 6:30 pm
+                                </p>
+                            </div>
+                            <div class="about-content__location">
+                                <h5 class="about-content__caption">
+                                    where
+                                </h5>
+                                <p class="about-content__par">
+                                    Dubai / ATLANTIS / THE PALM
+                                </p>
+                            </div>
+                            <button class="about-content__btn" id="getBtnSecond">
+                                get tickets
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="countdown">
+            <div class="countdown-content">
+                <h3 class="countdown-content__title">
+                    countdown
+                </h3>
+                <div class="countdown-content__timer">
+                    <p class="countdown-content__par" id="timer"></p>
+                </div>
+            </div>
+        </section>
+        <section class="speakers" id="speakers">
+            <div class="speakers-container">
+                <h2 class="title">
+                    speakers
+                </h2>
+                <div class="speakers-list">
+                    <ul class="speakers-list__items">
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Sunny-Lu.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Sunny Lu
+                            </h4>
+                            <p class="speakers-list__description">
+                                Vechain
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Jean-Charles-Gaudechon.png" alt="photo"
+                                class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Jean Charles-Gaudechon
+                            </h4>
+                            <p class="speakers-list__description">
+                                OneFootball Labs
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Dina-Sam'an.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Dina Sam'an
+                            </h4>
+                            <p class="speakers-list__description">
+                                CoinMENA
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Helen-Hai.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Helen Hai
+                            </h4>
+                            <p class="speakers-list__description">
+                                Binance
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Alex-Zinder.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Alex Zinder
+                            </h4>
+                            <p class="speakers-list__description">
+                                Ledger Enterprise
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Nena-Dokuzov.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Nena Dokuzov
+                            </h4>
+                            <p class="speakers-list__description">
+                                Alserkal Group
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Mohammed-Alblooshi.png" alt="photo"
+                                class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Mohammed
+                                Alblooshi
+                            </h4>
+                            <p class="speakers-list__description">
+                                Dubai International
+                                Financial Centre
+                                Authority
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Nicole-Purin.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Nicole Purin
+                            </h4>
+                            <p class="speakers-list__description">
+                                OKX
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Jason-Allegrante.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Jason Allegrante
+                            </h4>
+                            <p class="speakers-list__description">
+                                Fireblocks
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Max-Kordek.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Max Kordek
+                            </h4>
+                            <p class="speakers-list__description">
+                                Lisk
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Reece-Merrick.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Reece Merrick
+                            </h4>
+                            <p class="speakers-list__description">
+                                Ripple
+                            </p>
+                        </li>
+                        <li class="speakers-list__item">
+                            <img src="./images/speakers/Gracy-Chen.png" alt="photo" class="speakers-list__photo">
+                            <h4 class="speakers-list__name">
+                                Gracy Chen
+                            </h4>
+                            <p class="speakers-list__description">
+                                Bitget
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="agenda" id="agenda">
+            <div class="agenda-container">
+                <h2 class="title">
+                    Agenda
+                </h2>
+                <div class="agenda-content">
+                    <div class="agenda-content__day">
+                        <p>Day 1</p>
+                    </div>
+                    <div class="agenda-content__list">
+                        <aside class="agenda-content__items">
+                            <ul class="agenda-content__events">
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__caption">
+                                        Identifying the gamechanging trends in the web 3.0 ecosystem
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        WHAT WEB 3.0 MEANS FOR ENTERPRISES
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Sunny Lu
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        VALUE CREATION IN THE METAVERSE
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Gracy Chen
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Nena Dokuzov & Jean Charles Gaudechon
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Max Kordek
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        MAXIMIZING ESG IMPACT WITH BLOCKCHAIN
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Helen Hai
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        BRIDGING DEFI AND CEFI
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Jason Allegrante
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        WEB 3 GAMING: THE NEW FRONTIER?
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Sunny Lu
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Reece Merrick
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Mohammed Alblooshi
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        WEB 3: THE FUTURE IS HERE AND NOW
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Sunny Lu
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Alex Zinder & Nicole Purin
+                                    </p>
+                                </li>
+                                <li class="agenda-content__event">
+                                    <p class="agenda-content__title">
+                                        INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES
+                                    </p>
+                                    <p class="agenda-content__spiaker">
+                                        Dina Sam'an
+                                    </p>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sponsors" id="sponsors">
+            <div class="sponsors-container">
+                <h2 class="title">
+                    sponsors
+                </h2>
+                <div class="sponsors-list">
+                    <ul class="sponsors-list__items">
+                        <li class="sponsors-list__item">
+                            <a href="https://wegrowwithc3.com/" target="_blank" class="sponsors-list__link">
+                                <img src="./images/sponsors/C3.png" alt="logo" class="sponsors-list__logo">
+                            </a>
+                        </li>
+                        <li class="sponsors-list__item">
+                            <a href="https://woodstockfund.com/" target="_blank" class="sponsors-list__link">
+                                <img src="./images/sponsors/Woodstock Fund.png" alt="logo" class="sponsors-list__logo">
+                            </a>
+                        </li>
+                        <li class="sponsors-list__item">
+                            <a href="https://momentum6.com/" target="_blank" class="sponsors-list__link">
+                                <img src="./images/sponsors/Momentum6.png" alt="logo" class="sponsors-list__logo">
+                            </a>
+                        </li>
+                        <li class="sponsors-list__item">
+                            <a href="https://annexinvestments.com/" target="_blank" class="sponsors-list__link">
+                                <img src="./images/sponsors/Annex-Investments.png" alt="logo"
+                                    class="sponsors-list__logo">
+                            </a>
+                        </li>
+                        <li class="sponsors-list__item">
+                            <a href="https://dsainvestments.com/" target="_blank" class="sponsors-list__link">
+                                <img src="./images/sponsors/DSA-Investments.png" alt="logo" class="sponsors-list__logo">
+                            </a>
+                        </li>
+                        <li class="sponsors-list__item">
+                            <a href="https://tykheblock.ventures/" target="_blank" class="sponsors-list__link">
+                                <img src="./images/sponsors/Tykhe Block Ventures.png" alt="logo"
+                                    class="sponsors-list__logo">
+                            </a>
+                        </li>
+                        <li class="sponsors-list__item">
+                            <a href="https://www.888vc.co/" target="_blank" class="sponsors-list__link">
+                                <img src="./images/sponsors/888vc.png" alt="logo" class="sponsors-list__logo">
+                            </a>
+                        </li>
+                        <li class="sponsors-list__item">
+                            <a href="https://18ventures.co/" target="_blank" class="sponsors-list__link">
+                                <img src="./images/sponsors/18 Ventures.png" alt="logo" class="sponsors-list__logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer-nav">
+            <div class="container">
+                <img src="./images/logo.svg" alt="logo" class="footer-nav__logo">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a href="#home" class="nav-menu__link">Home</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#aboutUs" class="nav-menu__link">About Us</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#speakers" class="nav-menu__link">Speakers</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#sponsors" class="nav-menu__link">Sponsors</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a href="#agenda" class="nav-menu__link">Agenda</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container container--down">
+                <div class="footer-copyright">
+                    <p>
+                        Copyright © 2023 CryptoGoat. All Rights Reserved
+                    </p>
+                </div>
+                <div class="footer-polytic">
+                    <a href="#!" class="footer-link">
+                        <p>
+                            <span>Terms and Conditions</span> Privacy Policy
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
